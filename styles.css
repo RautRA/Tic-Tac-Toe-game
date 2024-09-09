@@ -18,7 +18,7 @@ body {
     width: 80%;
     height: 100vh;
     margin: 0 auto;
-    padding: 10vh 20vh;
+    padding: 5vh 20vh;
 }
 
 input, button, textarea, select {
@@ -41,4 +41,50 @@ ul {
     font-size: 3.6rem;
     font-weight: 600;
     text-align: center;
+}
+
+.game-status {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.game-board {
+    height: 480px;
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-board > .cell {
+    height: 160px;
+    width: 160px;
+    font-size: 8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board > .cell-x {
+    color: #4d4dff;
+}
+
+.game-board > .cell-o {
+    color: #ff4d4d;
+}
+
+#cell-0, #cell-1, #cell-2, #cell-3, #cell-4, #cell-5 {
+    border-bottom: 5px solid #4e5b65;
+}
+
+#cell-0, #cell-3, #cell-6 {
+    border-right: 5px solid #4e5b65;
+}
+
+#cell-2, #cell-5, #cell-8 {
+    border-left: 5px solid #4e5b65;
 }
